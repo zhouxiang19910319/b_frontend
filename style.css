@@ -1,0 +1,183 @@
+/*
+universal settings
+*/
+.waves-effect {
+  /*somehow this helps changes every text in catagory aligns to the right*/
+  display: block;
+}
+
+:root {
+  --main: #f47c48;
+  --accent: #fff5e8;
+  --indicator: #f49870;
+  --scrollbar_background:#fff5e8;
+  --scrollbar_foreground: #f49870;
+}
+
+*{
+  scrollbar-color: var(--scrollbar_foreground) var(--scrollbar_background);
+}
+
+
+/*
+  CSS Grid Settings
+  */
+body {
+  padding: 1rem;
+  background-color: var(--accent);
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 2fr 6fr 3fr;
+}
+
+/*
+  navigation section
+  */
+#catagory {
+  /*the z-depth-1 gives 2dp elevation to this section*/
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.collapsible {
+  margin: 0;
+  font-size: 18px;
+  /*this only works for the inner li, does not work on collapsible header*/
+  text-align: right;
+  /* border: 1px solid red; */
+  width: 90%;
+}
+
+.collapsible-body {
+  margin: 0;
+  padding: 12px 12px;
+  background-color: white;
+}
+
+.sub_catagory {
+  padding: 6px 6px;
+  background-color: white;
+}
+
+.catagory_link{
+  display: block;
+  width: 100%;
+  color: inherit;
+  border-style: none;
+}
+
+.collapsible li,
+.collapsible li ul li a {
+  color: var(--main);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+/*
+  Main section
+  */
+
+#buddha_img{
+  display: block;
+  padding: 1rem;
+  width: 50%;
+}
+
+#main_page_paragraph{
+  display: block;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--main);
+  font-weight: 700;
+}
+
+#main {
+  background-color: white;
+}
+
+#main_container {
+  margin: 1rem 1rem;
+  width: 90%;
+  /* border: 1px solid red; */
+  background-color: white;
+}
+
+.brand-logo {
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+/*overwrite the default ugly navbar color of materialize.css*/
+
+.nav-wrapper {
+  background-color: var(--main);
+}
+
+.tabs {
+  background-color: var(--accent);
+}
+
+/*overwrite the default tabs color scheme*/
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs .tab a {
+  color: black;
+  /*add more font weight here after adding in custom font*/
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  color: var(--main);
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  /*main color with a .2 alpha channel*/
+  background-color: rgba(244, 124, 72, 0.2);
+  outline: none;
+}
+
+.tabs .indicator {
+  background-color: var(--indicator);
+}
+
+#actual_content_wrapper {
+  padding: 1rem 1rem;
+
+  /*this is to create the inner scroll effect*/
+  position: relative;
+  height: 1000px;
+}
+
+.inner {
+  max-height: 100%;
+  overflow: auto;
+  padding: .5rem .5rem;
+}
+
+
+
+
+
+
+/*
+  Note Section
+  */
+#note{
+  background-color: white;
+}
+#feature_dis{
+  margin: 1rem 1rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+#about{
+  background: var(--main);
+}

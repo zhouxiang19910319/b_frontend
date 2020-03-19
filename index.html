@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddhist Blog</title>
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--catagory section-->
+    <section id="catagory" class="z-depth-1">
+        <ul class="collapsible expandable">
+            <!--Home Page-->
+            <li>
+                <div class="collapsible-header waves-effect"><a href="./index.html" class="catagory_link">主页</a></div>
+            </li>
+            <!--佛经原文-->
+            <li>
+                <div class="collapsible-header waves-effect">佛经原文</div>
+                <div class="collapsible-body">
+                    <ul class="yuanwen_list">
+                        <li class="sub_catagory waves-effect"><a href="./Pages/Yuan_Wen/lengyanjing.html">楞严经</a></li>
+                        <li class="sub_catagory waves-effect"><a href="#">金刚经</a></li>
+                        <li class="sub_catagory waves-effect"><a href="#">华严经</a></li>
+                        <li class="sub_catagory waves-effect"><a href="#">佛说四十二章经</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!--佛经浅释-->
+            <li>
+                <div class="collapsible-header waves-effect">佛经浅释</div>
+                <div class="collapsible-body">
+                    <ul class="yuanwen_list">
+                        <li class="sub_catagory waves-effect"><a href="#">楞严经浅释</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!--读书笔记-->
+            <li>
+                <div class="collapsible-header waves-effect">读书笔记</div>
+                <div class="collapsible-body">
+                    <ul class="yuanwen_list">
+                        <li class="sub_catagory waves-effect"><a href="#">楞严经浅释笔记</a></li>
+                    </ul>
+                </div>
+            </li>
+            <!--联系方式-->
+            <li>
+                <div class="collapsible-header waves-effect"><a href="./Pages/contact.html"
+                        class="catagory_link">联系方式</a></div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="main" class="z-depth-1">
+        <!--main_container-->
+        <img src="./imgs/front_page_pic.jpg" alt="front_page_pic" id="buddha_img">
+        <div id="main_page_paragraph">
+            <p>开经偈</p>
+            <p>无上甚深微妙法</p>
+            <p>百千万劫难遭遇</p>
+            <p>我今见闻得受持</p>
+            <p>愿解如来真实义</p>
+        </div>
+        <!--end main container-->
+    </section>
+
+    <!--Right Note Section-->
+    <section id="note" class="z-depth-1">
+        <!-- <div id="downloads"> -->
+            <!--this is a dummy download div-->
+        <!-- </div> -->
+        <div id="feature_dis">
+            <!-- Element Showed -->
+            <a id="about" class="waves-effect waves-light btn btn-floating"><i class="fas fa-bars"></i></a>
+
+            <!-- Tap Target Structure -->
+            <div class="tap-target" data-target="about">
+                <div class="tap-target-content">
+                    <h5>About</h5>
+                    <p>Some project description, what technology I used to create it; github link.etc</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="./materialize.js"></script>
+    <script src="https://kit.fontawesome.com/484c58c9d7.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
