@@ -18,6 +18,11 @@ universal settings
   scrollbar-color: var(--scrollbar_foreground) var(--scrollbar_background);
 }
 
+html{
+  /*this is to prevent the horizontal scroll bar from appearing after adding feature discovery*/
+  overflow: hidden;
+}
+
 
 /*
   CSS Grid Settings
@@ -161,23 +166,31 @@ body {
   padding: .5rem .5rem;
 }
 
-
-
-
-
-
 /*
   Note Section
   */
 #note{
   background-color: white;
 }
-#feature_dis{
-  margin: 1rem 1rem;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+.tap-target{
+  background-color: var(--main);
 }
-#about{
+#menu{
   background: var(--main);
+}
+.material-icons{
+  background-color: var(--main);
+}
+#feature_dis_title{
+  font-weight: 700;
+  font-size: 2rem;
+}
+#feature_dis_p{
+  color: white;
+}
+#feature_dis_a{
+  text-decoration: underline;
+}
+#feature_dis_a:hover{
+  color: inherit;
 }

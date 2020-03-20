@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buddhist Blog</title>
     <link rel="stylesheet" href="materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -73,26 +74,28 @@
         <!-- <div id="downloads"> -->
             <!--this is a dummy download div-->
         <!-- </div> -->
-        <div id="feature_dis">
-            <!-- Element Showed -->
-            <a id="about" class="waves-effect waves-light btn btn-floating"><i class="fas fa-bars"></i></a>
-
-            <!-- Tap Target Structure -->
-            <div class="tap-target" data-target="about">
-                <div class="tap-target-content">
-                    <h5>About</h5>
-                    <p>Some project description, what technology I used to create it; github link.etc</p>
-                </div>
-            </div>
-
-        </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    <sec id="feature_dis">
+        <!-- Element Showed -->
+        <div class="fixed-action-btn">
+            <a id="menu" onclick="next(0)" class="waves-effect waves-light btn btn-floating"><i class="material-icons">menu</i></a>
+        </div>
+        
+        <!-- Tap Target Structure -->
+        <div class="tap-target" data-target="menu">
+            <div class="tap-target-content white-text">
+                <p id="feature_dis_title">About this project</p>
+                <p id="feature_dis_p">Made with VUE and OctoberCMS</p>
+                <p id="feature_dis_p">Github <a href="#" id="feature_dis_a">链接</a></p>
+            </div>
+        </div>
+    </sec>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> -->
     </script>
     <script src="./materialize.js"></script>
-    <script src="https://kit.fontawesome.com/484c58c9d7.js" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 </body>
 
