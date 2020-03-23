@@ -13,7 +13,6 @@ universal settings
   --scrollbar_background:#fff5e8;
   --scrollbar_foreground: #f49870;
 }
-
 *{
   scrollbar-color: var(--scrollbar_foreground) var(--scrollbar_background);
 }
@@ -132,7 +131,7 @@ body {
 /*overwrite the default tabs color scheme*/
 .tabs {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .tabs .tab a {
